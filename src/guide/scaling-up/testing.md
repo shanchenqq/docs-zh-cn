@@ -420,7 +420,7 @@ import { useFoo } from './foo'
 test('useFoo', () => {
   const [result, app] = withSetup(() => useFoo(123))
   // 为注入的测试模拟一方供给
-  app.provide(...)
+  app.provide(...) //能否给个完整写全的例子,我测试这里的provide提供的值接收不到
   // 执行断言
   expect(result.foo.value).toBe(1)
   // 如果需要的话可以这样触发
